@@ -13,7 +13,7 @@ To install, you'll need to be sure that your root `composer.json` file contains 
     "repositories": [
         {
             "type": "vcs",                                                                                                              
-            "url": "https://github.com/wigzoi00/wigzo-magento2-service.git"
+            "url": "https://github.com/wigzo00/wigzo-magento2-service.git"
         }
     ]
 ```
