@@ -58,6 +58,6 @@ class OrderItems extends \Wigzo\Service\Controller\Module {
             $this->ignoreCost
         );
 
-        return $result->setData(['orderItems' => $data]);
+        return $result->setData(['order_items' => $data]);
     }
 }

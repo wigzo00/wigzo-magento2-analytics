@@ -28,8 +28,18 @@ class Product {
         if($parentProductIds) {
             $this->parent_product_id = $parentProductIds[0];
             $parentProduct = $this->objectManager->create('\Magento\Catalog\Model\Product')->load($parentProductIds[0]);
-            $parentProductImage = $parentProduct->getImage();
-        }
+	    $parentProductImage = $parentProduct->getImage();
+	    $this->parent_json =   array(
+                'price'=> $parentProduct->getData('price'),
+                'product_id'=>  $parentProductIds[0],
+                'created_at'=>  $parentProduct->getData('created_at'),
+                'updated_at'=>  $parentProduct->getData('updated_at'),
+                'name'=>  $parentProduct->getData('name'),
+                'description'=>  $parentProduct->getData('description'),
+                'sku'=>  $parentProduct->getData('sku')
+            );
+ 
+	}
         foreach ($productAttributes as $field => $usesSource) {
             try {
                 $value = $product->getData($field);

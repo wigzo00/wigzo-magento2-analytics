@@ -56,6 +56,6 @@ class RefundItems extends \Wigzo\Service\Controller\Module {
             $this->id
         );
 
-        return $result->setData(['refundItems' => $data]);
+        return $result->setData(['refund_items' => $data]);
     }
 }

@@ -9,12 +9,14 @@ class RefundItem {
         $this->parent_id = $refund->getData('parent_id');
         $this->product_id = $refund->getData('product_id');
         $this->order_item_id = $refund->getData('order_item_id');
+        $this->order_id = $refund->getData('order_id');
         $this->qty = $refund->getData('qty');
         $this->row_total = $refund->getData('row_total');
         $this->tax_amount = $refund->getData('tax_amount');
         $this->price = $refund->getData('base_price');
         $this->created_at = $refund->getCreatedAt();
         $this->updated_at = $refund->getUpdatedAt();
+        $this->discount_amount = $refund->getData('discount_amount');
 
         return $this;
     }
