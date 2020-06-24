@@ -26,13 +26,13 @@ Next, add the required package your root `composer.json` file:
 
 ```json
     "require": {
-        "wigzo-magento2-analytics": "2.1.0"
+        "wigzo00/wigzo-magento2-analytics": "2.1.3"
     }
 ```
 
 You can also add this using the Composer command line with the command:
 
-    composer require wigzo00/wigzo-magento2-analytics:2.1.0
+    composer require wigzo00/wigzo-magento2-analytics:2.1.3
 
 #### Run Update
 From the command line, run the composer update with the command:
