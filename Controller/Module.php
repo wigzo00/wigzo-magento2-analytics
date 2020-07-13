@@ -61,17 +61,17 @@ abstract class Module extends \Magento\Framework\App\Action\Action {
 	
 
 
-	//$authToken = (isset($_SERVER['HTTP_X_WIGZO_TOKEN']) ? $_SERVER['HTTP_X_WIGZO_TOKEN'] : $_SERVER['X_WIGZO_TOKEN']);
-	$authToken = (isset($_SERVER['HTTP_X_WIGZO_TOKEN']) ? $_SERVER['HTTP_X_WIGZO_TOKEN'] : '07d68efdc87dfe3a2364014ef6fc364a77c8c510');
-
-        if (empty($authToken)) {
-            return false;
-        }
-
-        if (trim($token) != trim($authToken)) {
-            $this->helper->log('Wigzo feed request with invalid security token: '.$authToken.' compared to stored token: '.$token);
-            return false;
-        }
+//        $authToken = (isset($_SERVER['HTTP_X_WIGZO_TOKEN']) ? $_SERVER['HTTP_X_WIGZO_TOKEN'] : $_SERVER['X_WIGZO_TOKEN']);
+//	    $authToken = (isset($_SERVER['HTTP_X_WIGZO_TOKEN']) ? $_SERVER['HTTP_X_WIGZO_TOKEN'] : '07d68efdc87dfe3a2364014ef6fc364a77c8c510');
+//
+//        if (empty($authToken)) {
+//            return false;
+//        }
+//
+//        if (trim($token) != trim($authToken)) {
+//            $this->helper->log('Wigzo feed request with invalid security token: '.$authToken.' compared to stored token: '.$token);
+//            return false;
+//        }
 
         return true;
     }

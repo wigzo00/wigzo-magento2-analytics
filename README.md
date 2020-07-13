@@ -10,12 +10,12 @@ Before installing, it is recommended that you disable your cache in System -> Ca
 To install, you'll need to be sure that your root `composer.json` file contains a reference to the Wigzo repository.  To do so, add the following to `composer.json`:
 
 ```json
-    "repositories": [
-        {
-            "type": "vcs",                                                                                                              
+"repositories": {
+        "wigzo": {
+            "type": "vcs",
             "url": "https://github.com/wigzo00/wigzo-magento2-analytics.git"
         }
-    ]
+"
 ```
 
 The above can also be added using the Composer command line with the command:
@@ -26,18 +26,18 @@ Next, add the required package your root `composer.json` file:
 
 ```json
     "require": {
-        "wigzo00/wigzo-magento2-analytics": "2.1.3"
+        "wigzo00/wigzo-magento2-analytics": "2.1.4",
     }
 ```
 
 You can also add this using the Composer command line with the command:
 
-    composer require wigzo00/wigzo-magento2-analytics:2.1.3
+    composer require wigzo00/wigzo-magento2-analytics:2.1.4
 
 #### Run Update
 From the command line, run the composer update with the command:
 
-    composer update
+    composer update wigzo00/wigzo-magento2-analytics:2.1.4
 
 #### Run setup:upgrade
 From the command line, run setup:upgrade with the command:
